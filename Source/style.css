@@ -63,13 +63,13 @@ body{
     transform: translateY(-7px);
 }
 
-.keyEventInfo h3{
+.infoBox h3{
     background-color: rgba(22, 149, 239,70%);
     padding: 5px 0px;
     font-weight: 400;
 }
 
-.keyEventInfo h5{
+.infoBox h5{
     margin-top: 30px;
     font-weight: 400;
 }
