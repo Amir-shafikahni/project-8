@@ -49,13 +49,18 @@ body{
     font-weight: 100;
 }
 
-.eventKey,.eventLocation,.eventWhich,.eventCode{
+.infoBox{
     background-color:rgba(189, 195, 199, 80%);
     border-radius: 10px;
     overflow: hidden;
     height:140px;
     margin: 10px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.infoBox:hover{
+    transform: translateY(-7px);
 }
 
 .keyEventInfo h3{
@@ -92,7 +97,7 @@ body{
 
 @media only screen and (max-width:768px){
     .keyCodeInfo{
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .keyEventWhich{
         font-size: 110px;
