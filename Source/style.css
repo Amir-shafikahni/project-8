@@ -6,7 +6,7 @@
 
 body{
     background-image: linear-gradient(135deg ,#2c3e50 ,#bdc3c7);
-    height: 1500px;
+    height: 1200px;
     overflow: hidden;
     width: 100%;
 }
@@ -43,7 +43,7 @@ body{
     display: none;
 }
 
-.keyEventWhich{
+.eventKeyWhich{
     font-size: 170px;
     transition: 0.3s;
     font-weight: 100;
@@ -96,10 +96,13 @@ body{
 
 
 @media only screen and (max-width:768px){
+    body{
+        overflow: auto;
+    }
     .keyCodeInfo{
         margin-top: 50px;
     }
-    .keyEventWhich{
+    .eventKeyWhich{
         font-size: 110px;
     }
     .copyRight{

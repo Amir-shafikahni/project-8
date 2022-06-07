@@ -5,11 +5,11 @@ let $ = document;
 let body = $.body;
 let pressKeyAlert = $.querySelector(".pressKeyAlert");
 let keyCodeInfo = $.querySelector(".keyCodeInfo");
-let keyEventWhich =$.querySelector(".keyEventWhich")
-let eventKeyAmount = $.querySelector(".eventKeyAmount");
-let eventLocationAmount = $.querySelector(".eventLocationAmount");
-let eventWhichAmount = $.querySelector(".eventWhichAmount");
-let eventCodeAmount = $.querySelector(".eventCodeAmount");
+let eventkeyWhich =$.querySelector(".eventKeyWhich")
+let eventKey = $.querySelector(".eventKey");
+let eventLocation = $.querySelector(".eventLocation");
+let eventWhich = $.querySelector(".eventWhich");
+let eventCode = $.querySelector(".eventCode");
 
 body.addEventListener("keydown", function (event) {
   event.preventDefault()
@@ -17,9 +17,9 @@ body.addEventListener("keydown", function (event) {
   pressKeyAlert.style.display = "none";
   keyCodeInfo.style.display = "block";
   
-  keyEventWhich.innerHTML = event.which
-  eventKeyAmount.innerHTML = event.key;
-  eventLocationAmount.innerHTML = event.location;
-  eventWhichAmount.innerHTML = event.which;
-  eventCodeAmount.innerHTML = event.code
+  eventkeyWhich.innerHTML = event.which
+  eventKey.innerHTML = event.key;
+  eventLocation.innerHTML = event.location;
+  eventWhich.innerHTML = event.which;
+  eventCode.innerHTML = event.code
 });
