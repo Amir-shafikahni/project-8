@@ -12,6 +12,8 @@ let eventWhichAmount = $.querySelector(".eventWhichAmount");
 let eventCodeAmount = $.querySelector(".eventCodeAmount");
 
 body.addEventListener("keydown", function (event) {
+  event.preventDefault()
+  
   pressKeyAlert.style.display = "none";
   keyCodeInfo.style.display = "block";
   
